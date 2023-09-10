@@ -1,0 +1,66 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"$atoms": [
+				"../src/lib/components/atoms/index.ts"
+			],
+			"$stores": [
+				"../src/lib/stores"
+			],
+			"$stores/*": [
+				"../src/lib/stores/*"
+			],
+			"$flow": [
+				"../src/flow"
+			],
+			"$flow/*": [
+				"../src/flow/*"
+			],
+			"$i18n": [
+				"../src/i18n"
+			],
+			"$i18n/*": [
+				"../src/i18n/*"
+			],
+			"$lib": [
+				"../src/lib"
+			],
+			"$lib/*": [
+				"../src/lib/*"
+			]
+		},
+		"rootDirs": [
+			"..",
+			"./types"
+		],
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"preserveValueImports": true,
+		"lib": [
+			"esnext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"moduleResolution": "node",
+		"module": "esnext",
+		"target": "esnext"
+	},
+	"include": [
+		"ambient.d.ts",
+		"./types/**/$types.d.ts",
+		"../vite.config.ts",
+		"../src/**/*.js",
+		"../src/**/*.ts",
+		"../src/**/*.svelte",
+		"../tests/**/*.js",
+		"../tests/**/*.ts",
+		"../tests/**/*.svelte"
+	],
+	"exclude": [
+		"../node_modules/**",
+		"./[!ambient.d.ts]**",
+		"../src/service-worker.js",
+		"../src/service-worker.ts",
+		"../src/service-worker.d.ts"
+	]
+}

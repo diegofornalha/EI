@@ -1,0 +1,28 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/api/flownaut/get-level-info/[levelId]/[userAddress]": [
+		"src/routes/api/flownaut/get-level-info/[levelId]/[userAddress]/+server.ts"
+	],
+	"/api/flownaut/new-instance": [
+		"src/routes/api/flownaut/new-instance/+server.ts"
+	],
+	"/api/flownaut/submit": [
+		"src/routes/api/flownaut/submit/+server.ts"
+	],
+	"/sitemap.xml": [
+		"src/routes/sitemap.xml/+server.js"
+	],
+	"/[lang=lang]": [
+		"src/routes/[lang=lang]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/[lang=lang]/[id]": [
+		"src/routes/[lang=lang]/[id]/+page.ts",
+		"src/routes/+layout.ts",
+		"src/routes/+layout.server.ts"
+	]
+}
